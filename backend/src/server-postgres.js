@@ -1,6 +1,8 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+
+// Use auto-switching database
 const db = require('./config/database-auto');
 
 const app = express();

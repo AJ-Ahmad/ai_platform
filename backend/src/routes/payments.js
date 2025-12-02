@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
-const Course = require('../models/Course');
-const Enrollment = require('../models/Enrollment');
+const Course = require('../models-auto/Course');
+const Enrollment = require('../models-auto/Enrollment');
 const authMiddleware = require('../middleware/auth');
 const checkRole = require('../middleware/roleCheck');
 
